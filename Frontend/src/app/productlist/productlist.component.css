@@ -1,0 +1,17 @@
+thead{
+    color:#8b5917
+}
+.card-header{
+    font-size: x-large;
+    font-style: italic;
+}
+#a{
+    color:seagreen;
+    font-size: medium;
+    font-weight:bold;
+    background-image: url('/assets/images/2.jpg');
+    background-size : cover;
+}
+#b{
+color:mediumblue
+}

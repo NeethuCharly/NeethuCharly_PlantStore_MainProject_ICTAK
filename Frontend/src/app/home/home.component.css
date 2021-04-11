@@ -1,0 +1,11 @@
+#bg{
+    /* The image used */
+    background-image: url("../../assets/images/3.jpg");
+    /* background-size: cover; */
+}
+
+*{
+    color: rgb(51, 117, 90);
+    font-family:sans-serif;
+    font-weight:bold;
+}

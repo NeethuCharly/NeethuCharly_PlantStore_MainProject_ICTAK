@@ -1,0 +1,40 @@
+<div class='card' id='a'>
+    <div class='card-header'>
+     {{pageTitle}}
+    </div>
+    
+    <div class='card-body'>            
+      <div class='table-responsive'>
+        <table class='table bg-pic '
+              *ngIf = 'products && products.length'>
+          <thead>
+            <tr>
+              <th>
+                <button class='btn btn-primary'
+                (click)='toggleImage()'>
+                  {{showImage? 'Hide' : 'Show'}} Image
+                </button>
+              </th>
+              <th>Product</th>
+              <th>Code</th>
+              <th>Price</th>
+            </tr>
+           
+          </thead>
+          <tbody id='b'>  
+              <tr *ngFor='let product of products'>
+                  <td><img *ngIf='showImage'
+                    [src] = 'product.imageUrl' 
+                    [title] = 'product.productName'
+                    [style.width.px] = 'imageWidth' 
+                    [style.margin.px] = 'imageMargin'></td>
+                  <td>{{ product.productName|uppercase }}</td>
+                  <td>{{ product.productCode }}</td>
+                  <td>{{ product.price|currency:'Rs.' }}</td>
+               </tr>              
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

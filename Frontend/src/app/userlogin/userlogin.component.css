@@ -1,0 +1,8 @@
+.container{
+    background-image: url('/assets/images/2.jpg');
+    background-size: cover;
+}
+*{
+    color: rgb(187, 16, 16);
+    text-align: center;
+}
